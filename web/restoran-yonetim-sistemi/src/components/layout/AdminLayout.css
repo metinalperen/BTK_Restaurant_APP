@@ -1,0 +1,529 @@
+.admin-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background);
+    padding-top: 70px;
+}
+
+.admin-content-wrapper {
+    display: flex;
+    flex: 1;
+}
+
+/* Desktop/default: sidebar always visible as a left column */
+.admin-sidebar {
+    width: 260px;
+    min-width: 260px;
+    max-width: 280px;
+    background: var(--sidebar);
+    border-right: 1px solid var(--border);
+    padding: 24px 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 70px);
+    position: fixed;
+    left: 0;
+    top: 70px;
+    z-index: 10;
+    transform: none;
+}
+
+/* open/closed classes are used only in mobile view (overridden below) */
+
+.admin-sidebar-header {
+    padding: 0 8px;
+    margin-bottom: 8px;
+}
+
+.admin-sidebar-header h2 {
+    font-size: 1.5rem;
+    color: var(--text);
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 16px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.admin-user-info {
+    padding: 4px 0;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 12px;
+}
+
+.admin-user-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 2px;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: left;
+}
+
+.admin-user-role {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: left;
+}
+
+.admin-sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.admin-nav-item {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    line-height: 1.3;
+}
+
+.admin-nav-item:hover {
+    background: var(--hover);
+    color: var(--primary);
+}
+
+.admin-nav-item.active {
+    background: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 4px 12px var(--primary-shadow);
+}
+
+.admin-sidebar-bottom {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.admin-settings-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.admin-logout-btn {
+    margin-top: 10px;
+    background: var(--danger) !important;
+    color: #ffffff !important;
+}
+
+.admin-logout-btn:hover {
+    background: var(--danger-hover) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px var(--danger-shadow);
+}
+
+.admin-main-content {
+    flex: 1;
+    padding: 40px;
+    padding-top: 110px;
+    min-width: 0;
+    background: var(--background);
+    margin-left: 260px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Hamburger menü butonu stilleri */
+.hamburger-menu-btn {
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    z-index: 1001;
+    background: var(--primary);
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    display: none;
+    /* hidden by default; shown on small screens */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid var(--border);
+}
+
+.hamburger-menu-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Sidebar overlay stilleri */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    backdrop-filter: blur(3px);
+    transition: all 0.3s ease;
+}
+
+/* Light theme variables */
+.light-theme {
+    --background: #F5EFFF;
+    --sidebar: #E5D9F2;
+    --text: #1A0B3D;
+    --text-secondary: #2D1B69;
+    --text-muted: #4A3B76;
+    --border: #CDC1FF;
+    --border-light: #E5D9F2;
+    --primary: #A294F9;
+    --primary-shadow: rgba(162, 148, 249, 0.2);
+    --success: #10B981;
+    --danger: #EF4444;
+    --danger-hover: #DC2626;
+    --danger-shadow: rgba(239, 68, 68, 0.3);
+    --warning: #F59E0B;
+    --info: #3B82F6;
+    --hover: #CDC1FF;
+    --shadow: rgba(162, 148, 249, 0.1);
+    --overlay: rgba(162, 148, 249, 0.5);
+}
+
+/* Dark theme variables */
+.dark-theme {
+    --background: #32263A;
+    --sidebar: #473653;
+    --text: #ffffff;
+    --text-secondary: #e0e0e0;
+    --text-muted: #b0b0b0;
+    --border: #53364D;
+    --border-light: #3A2636;
+    --primary: #a78bfa;
+    --primary-shadow: rgba(167, 139, 250, 0.2);
+    --success: #4ade80;
+    --danger: #f87171;
+    --danger-hover: #ef4444;
+    --danger-shadow: rgba(248, 113, 113, 0.3);
+    --warning: #fbbf24;
+    --info: #60a5fa;
+    --hover: #53364D;
+    --shadow: rgba(50, 38, 58, 0.3);
+    --overlay: rgba(50, 38, 58, 0.8);
+}
+
+/* Tablet için responsive tasarım */
+@media (max-width: 1024px) {
+
+    /* Show hamburger menu button on tablets */
+    .hamburger-menu-btn {
+        display: flex !important;
+        top: 90px !important;
+        left: 20px !important;
+        z-index: 1001 !important;
+    }
+
+    /* Switch to overlay/drawer behavior */
+    .admin-sidebar {
+        width: 280px;
+        min-width: 260px;
+        max-width: 320px;
+        padding: 20px 12px;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        height: calc(100vh - 70px);
+        z-index: 1000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .admin-sidebar.open {
+        transform: translateX(0);
+    }
+
+    .admin-sidebar.closed {
+        transform: translateX(-100%);
+    }
+
+    .admin-main-content {
+        margin-left: 0;
+        padding: 30px;
+        padding-top: 110px;
+        transition: margin-left 0.3s ease-in-out;
+    }
+
+    /* Mobilde sidebar açıkken ana içeriği sağa kaydır */
+    body.sidebar-open .admin-main-content {
+        margin-left: 280px;
+    }
+
+    .admin-sidebar-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .admin-user-info {
+        padding: 3px 0;
+        margin-bottom: 8px;
+        gap: 10px;
+    }
+
+    .admin-user-name {
+        font-size: 0.85rem;
+        margin-bottom: 3px;
+    }
+
+    .admin-user-role {
+        font-size: 0.7rem;
+    }
+
+    .admin-nav-item {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobil için responsive tasarım */
+@media (max-width: 768px) {
+    .admin-sidebar {
+        width: 280px;
+        min-width: 280px;
+        max-width: 320px;
+        padding: 16px 10px;
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+
+    .admin-main-content {
+        margin-left: 0;
+        padding: 20px;
+        padding-top: 110px;
+        transition: margin-left 0.3s ease-in-out;
+    }
+
+    /* Mobilde sidebar açıkken ana içeriği sağa kaydır */
+    body.sidebar-open .admin-main-content {
+        margin-left: 280px;
+    }
+
+    .admin-sidebar-header {
+        padding: 0 6px;
+        margin-bottom: 8px;
+    }
+
+    .admin-sidebar-header h2 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .admin-nav-item {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+        border-radius: 6px;
+    }
+
+    .admin-user-info {
+        padding: 8px 0;
+        gap: 12px;
+    }
+
+    .admin-sidebar-bottom {
+        padding-top: 12px;
+    }
+}
+
+/* Küçük mobil ekranlar için */
+@media (max-width: 480px) {
+    .admin-sidebar {
+        width: 280px;
+        min-width: 280px;
+        max-width: 320px;
+        padding: 12px 8px;
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+
+    .admin-main-content {
+        margin-left: 0;
+        padding: 15px;
+        padding-top: 110px;
+    }
+
+    .admin-sidebar-header {
+        padding: 0 4px;
+        margin-bottom: 6px;
+    }
+
+    .admin-sidebar-header h2 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .admin-nav-item {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .admin-user-info {
+        padding: 4px 0;
+        margin-bottom: 8px;
+    }
+
+    .admin-user-name {
+        font-size: 0.8rem;
+        margin-bottom: 3px;
+    }
+
+    .admin-user-role {
+        font-size: 0.7rem;
+    }
+}
+
+/* Çok küçük ekranlar için */
+@media (max-width: 360px) {
+    .admin-sidebar {
+        width: 280px;
+        min-width: 280px;
+        max-width: 320px;
+        padding: 10px 6px;
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+
+    .admin-main-content {
+        margin-left: 0;
+        padding: 12px;
+        padding-top: 110px;
+    }
+
+    .admin-sidebar-header {
+        padding: 0 2px;
+        margin-bottom: 4px;
+    }
+
+    .admin-sidebar-header h2 {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    .admin-nav-item {
+        padding: 6px 8px;
+        font-size: 0.75rem;
+    }
+
+    .admin-user-info {
+        padding: 3px 0;
+        margin-bottom: 6px;
+        gap: 8px;
+    }
+
+    .admin-user-name {
+        font-size: 0.75rem;
+        margin-bottom: 2px;
+    }
+
+    .admin-user-role {
+        font-size: 0.65rem;
+    }
+}
+
+/* Mobil sidebar toggle stilleri */
+@media (max-width: 768px) {
+    .hamburger-menu-btn {
+        display: flex !important;
+        top: 90px !important;
+        left: 20px !important;
+        z-index: 1001 !important;
+    }
+
+    .admin-sidebar {
+        transform: translateX(-100%);
+        position: fixed;
+        top: 70px;
+        height: calc(100vh - 70px);
+        z-index: 1000;
+    }
+
+    .admin-sidebar.open {
+        transform: translateX(0);
+    }
+
+    .admin-main-content {
+        margin-left: 0 !important;
+        padding: 20px;
+        padding-top: 110px;
+    }
+
+    .sidebar-overlay {
+        display: block !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-main-content {
+        padding: 15px;
+        padding-top: 110px;
+    }
+}
+
+@media (max-width: 360px) {
+    .admin-main-content {
+        padding: 12px;
+        padding-top: 110px;
+    }
+}
+
+/* Landscape modda mobil için */
+@media (max-height: 500px) and (orientation: landscape) {
+    .admin-sidebar {
+        width: 280px;
+        min-width: 280px;
+        max-width: 320px;
+        padding: 12px 8px;
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+
+    .admin-main-content {
+        margin-left: 0;
+        padding: 12px;
+        padding-top: 110px;
+    }
+
+    .admin-sidebar-header {
+        margin-bottom: 4px;
+    }
+
+    .admin-sidebar-header h2 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+
+    .admin-nav-item {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    .admin-sidebar-bottom {
+        padding-top: 8px;
+    }
+}

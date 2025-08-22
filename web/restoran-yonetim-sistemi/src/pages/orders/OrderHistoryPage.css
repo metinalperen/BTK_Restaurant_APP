@@ -1,0 +1,35 @@
+/* OrderHistoryPage.css */
+.order-history-container {
+    transition: all 0.3s ease;
+}
+
+.order-history-table {
+    transition: all 0.3s ease;
+}
+
+.order-history-table tbody tr:hover {
+    background-color: rgba(161, 148, 249, 0.1);
+}
+
+[data-theme="dark"] .order-history-table tbody tr:hover {
+    background-color: rgba(161, 148, 249, 0.15);
+}
+
+.action-badge {
+    transition: all 0.3s ease;
+}
+
+.financial-impact {
+    transition: all 0.3s ease;
+}
+
+.search-input:focus,
+.select-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(161, 148, 249, 0.3);
+}
+
+[data-theme="dark"] .search-input:focus,
+[data-theme="dark"] .select-input:focus {
+    box-shadow: 0 0 0 2px rgba(161, 148, 249, 0.4);
+}

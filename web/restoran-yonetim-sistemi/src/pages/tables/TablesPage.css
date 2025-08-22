@@ -1,0 +1,111 @@
+.tables-page-container {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    background: var(--background);
+    min-height: 100vh;
+    color: var(--text);
+}
+
+.tables-section {
+    flex-grow: 1;
+}
+
+.tables-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.tables-grid-pelin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.table-box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid var(--border);
+    user-select: none;
+    color: var(--text);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px var(--shadow);
+    transition: transform 0.2s;
+    background: var(--card);
+}
+
+.table-box:hover {
+    transform: scale(1.05);
+    background: var(--hover);
+}
+
+.floor-selection-section {
+    width: 120px;
+}
+
+.floor-selection-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.floor-selector-box {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background-color: var(--surface);
+    color: var(--text);
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid var(--border);
+}
+
+.floor-selector-box.active {
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.floor-selector-box:not(.active):hover {
+    background-color: var(--hover);
+}
+
+/* Koyu tema için özel stiller */
+.dark-theme .table-box {
+    background: var(--card);
+    border-color: var(--border);
+    color: var(--text);
+}
+
+.dark-theme .table-box:hover {
+    background: var(--hover);
+}
+
+.dark-theme .floor-selector-box {
+    background-color: var(--surface);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+.dark-theme .floor-selector-box.active {
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.dark-theme .floor-selector-box:not(.active):hover {
+    background-color: var(--hover);
+}
+
+/* Modal için mevcut stiller korunabilir veya ayarlanabilir */
+/* TableStatusModal'ın düzgün çalıştığından emin olun */

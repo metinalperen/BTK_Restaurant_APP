@@ -1,0 +1,569 @@
+/* SalesChart.css */
+
+/* Açık tema için chart stilleri - Değişiklik yok */
+.light-theme .sales-chart .card {
+  background-color: #ffffff !important;
+  color: #2c3e50 !important;
+  border: 1px solid #dee2e6 !important;
+}
+
+.light-theme .sales-chart .card-title {
+  color: #2c3e50 !important;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.light-theme .sales-chart .chart-container {
+  background-color: #ffffff !important;
+}
+
+.light-theme .sales-chart .btn-group .btn {
+  background-color: #ffffff !important;
+  color: #2c3e50 !important;
+  border-color: #dee2e6 !important;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.light-theme .sales-chart .btn-group .btn-primary {
+  background-color: var(--primary) !important;
+  color: var(--text) !important;
+  border-color: var(--primary) !important;
+}
+
+.light-theme .sales-chart .form-select {
+  background-color: #ffffff !important;
+  color: #2c3e50 !important;
+  border-color: #dee2e6 !important;
+}
+
+/* Koyu tema için chart stilleri - Tema renklerine uygun */
+.dark-theme .sales-chart .card {
+  background-color: var(--cardBackground) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+}
+
+.dark-theme .sales-chart .card-title {
+  color: var(--text) !important;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.dark-theme .sales-chart .chart-container {
+  background-color: var(--cardBackground) !important;
+}
+
+.dark-theme .sales-chart .btn-group .btn {
+  background-color: var(--accentBackground) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.dark-theme .sales-chart .btn-group .btn-primary {
+  background-color: var(--primary) !important;
+  color: var(--text) !important;
+  border-color: var(--primary) !important;
+}
+
+.dark-theme .sales-chart .btn-group .btn-outline-primary {
+  background-color: transparent !important;
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.dark-theme .sales-chart .btn-group .btn-outline-primary:hover {
+  background-color: var(--primary) !important;
+  color: var(--text) !important;
+}
+
+.dark-theme .sales-chart .form-select {
+  background-color: var(--accentBackground) !important;
+  color: #2c3e50 !important;
+  border-color: var(--border) !important;
+}
+
+.dark-theme .sales-chart .form-select option {
+  background-color: var(--accentBackground) !important;
+  color: #2c3e50 !important;
+}
+
+/* Karanlık tema için dropdown option'ları için daha spesifik stiller */
+.dark-theme .sales-chart .form-select option:hover {
+  background-color: var(--hover) !important;
+  color: #2c3e50 !important;
+}
+
+.dark-theme .sales-chart .form-select option:checked {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+}
+
+.dark-theme .sales-chart .form-select option:focus {
+  background-color: var(--hover) !important;
+  color: #2c3e50 !important;
+}
+
+/* Dropdown menüsü için genel stiller */
+.dark-theme .sales-chart .form-select {
+  background-color: var(--accentBackground) !important;
+  color: #2c3e50 !important;
+  border-color: var(--border) !important;
+}
+
+.dark-theme .sales-chart .form-select:focus {
+  background-color: var(--accentBackground) !important;
+  color: #2c3e50 !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(var(--primary-rgb), 0.25) !important;
+}
+
+/* Açık tema için dropdown option'ları */
+.light-theme .sales-chart .form-select option {
+  background-color: #ffffff !important;
+  color: #2c3e50 !important;
+}
+
+.light-theme .sales-chart .form-select option:hover {
+  background-color: #f8f9fa !important;
+  color: #2c3e50 !important;
+}
+
+.light-theme .sales-chart .form-select option:checked {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+}
+
+.light-theme .sales-chart .form-select option:focus {
+  background-color: #f8f9fa !important;
+  color: #2c3e50 !important;
+}
+
+/* SalesChart bileşenindeki buton renklerini tema ile entegre etme */
+.sales-chart .btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: var(--text) !important;
+}
+
+.sales-chart .btn-outline-primary {
+  background-color: transparent !important;
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+}
+
+.sales-chart .btn-outline-primary:hover {
+  background-color: var(--primary) !important;
+  color: var(--text) !important;
+}
+
+/* Koyu tema için buton renkleri */
+.dark-theme .sales-chart .btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: var(--text) !important;
+}
+
+.dark-theme .sales-chart .btn-outline-primary {
+  background-color: transparent !important;
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+}
+
+.dark-theme .sales-chart .btn-outline-primary:hover {
+  background-color: var(--primary) !important;
+  color: var(--text) !important;
+}
+
+/* Açık tema için buton renkleri */
+.light-theme .sales-chart .btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: var(--text) !important;
+}
+
+.light-theme .sales-chart .btn-outline-primary {
+  background-color: transparent !important;
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+}
+
+.light-theme .sales-chart .btn-outline-primary:hover {
+  background-color: var(--primary) !important;
+  color: var(--text) !important;
+}
+
+/* Chart.js canvas için koyu tema stilleri - Tema renklerine uygun */
+.dark-theme .sales-chart canvas {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js legend için koyu tema stilleri */
+.dark-theme .sales-chart .chartjs-legend {
+  color: var(--text) !important;
+}
+
+/* Chart.js tooltip için koyu tema stilleri */
+.dark-theme .sales-chart .chartjs-tooltip {
+  background-color: var(--surfaceBackground) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* Chart.js grid lines için koyu tema stilleri */
+.dark-theme .sales-chart .chartjs-grid-line {
+  color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Chart.js için genel koyu tema stilleri - Tema renklerine uygun */
+.dark-theme .sales-chart .chartjs-render-monitor {
+  background-color: var(--cardBackground) !important;
+}
+
+.dark-theme .sales-chart .chartjs-chart {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart container için ek stiller - Tema renklerine uygun */
+.dark-theme .sales-chart .chart-container {
+  background-color: var(--cardBackground) !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* Chart.js için daha spesifik canvas stilleri - Tema renklerine uygun */
+.dark-theme .sales-chart .chartjs-chart canvas {
+  background-color: var(--cardBackground) !important;
+}
+
+.dark-theme .sales-chart .chartjs-chart-js {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js için ek stiller - Tema renklerine uygun */
+.dark-theme .sales-chart .chartjs-chart-container {
+  background-color: var(--cardBackground) !important;
+}
+
+.dark-theme .sales-chart .chartjs-chart-wrapper {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js için genel stiller - Tema renklerine uygun */
+.dark-theme .sales-chart canvas {
+  background-color: var(--cardBackground) !important;
+}
+
+.dark-theme .sales-chart .chartjs-chart {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart container için border ve padding - Tema renklerine uygun */
+.dark-theme .sales-chart .chart-container {
+  background-color: var(--cardBackground) !important;
+  border: 2px solid var(--border) !important;
+  border-radius: 8px !important;
+}
+
+/* Chart.js için daha kapsamlı stiller - Tema renklerine uygun */
+.dark-theme .sales-chart .chartjs-chart-container {
+  background-color: var(--cardBackground) !important;
+}
+
+.dark-theme .sales-chart .chartjs-chart-wrapper {
+  background-color: var(--cardBackground) !important;
+}
+
+.dark-theme .sales-chart .chartjs-chart-canvas {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js için tüm olası canvas stilleri - Tema renklerine uygun */
+.dark-theme .sales-chart canvas[style*="background"] {
+  background-color: var(--cardBackground) !important;
+}
+
+.dark-theme .sales-chart canvas {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js için daha spesifik stil override - Tema renklerine uygun */
+.dark-theme .sales-chart .chartjs-chart,
+.dark-theme .sales-chart .chartjs-chart-container,
+.dark-theme .sales-chart .chartjs-chart-wrapper,
+.dark-theme .sales-chart .chartjs-chart-canvas,
+.dark-theme .sales-chart .chartjs-render-monitor {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js için canvas ve div elementleri - Tema renklerine uygun */
+.dark-theme .sales-chart div[style*="background"],
+.dark-theme .sales-chart canvas[style*="background"] {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js için tüm canvas elementleri - Tema renklerine uygun */
+.dark-theme .sales-chart canvas {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js için ek spesifik stiller - Tema renklerine uygun */
+.dark-theme .sales-chart .chartjs-chart canvas {
+  background-color: var(--cardBackground) !important;
+}
+
+.dark-theme .sales-chart .chartjs-chart-container canvas {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js için inline style override - Tema renklerine uygun */
+.dark-theme .sales-chart canvas[style] {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js için tüm olası div elementleri - Tema renklerine uygun */
+.dark-theme .sales-chart div {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js için tüm olası elementler - Tema renklerine uygun */
+.dark-theme .sales-chart * {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Chart.js için canvas ve div elementleri için ek stiller - Tema renklerine uygun */
+.dark-theme .sales-chart canvas,
+.dark-theme .sales-chart div {
+  background-color: var(--cardBackground) !important;
+}
+
+/* Genel chart responsive stilleri */
+.sales-chart {
+  width: 100%;
+  /* overflow-x: auto; - Gereksiz scroll bar kaldırıldı */
+}
+
+/* Scroll bar stilleri */
+.sales-chart .row::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.sales-chart .row::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.sales-chart .row::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.sales-chart .row::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Koyu tema için scroll bar */
+.dark-theme .sales-chart .row::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .sales-chart .row::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dark-theme .sales-chart .row::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.sales-chart .card {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sales-chart .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sales-chart .btn-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.sales-chart .btn-group .btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  white-space: normal;
+  line-height: 1.3;
+}
+
+.sales-chart .form-select {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.sales-chart .chart-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+/* Tablet için responsive tasarım */
+@media (max-width: 1024px) {
+  .sales-chart .card {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .sales-chart .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+
+  .sales-chart .btn-group .btn {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+
+  .sales-chart .form-select {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+  }
+
+  .sales-chart .chart-container {
+    height: 350px;
+  }
+}
+
+/* Mobil için responsive tasarım */
+@media (max-width: 768px) {
+  .sales-chart .card {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .sales-chart .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .sales-chart .btn-group {
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .sales-chart .btn-group .btn {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+  }
+
+  .sales-chart .form-select {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }
+
+  .sales-chart .chart-container {
+    height: 300px;
+  }
+}
+
+/* Küçük mobil ekranlar için */
+@media (max-width: 480px) {
+  .sales-chart .card {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  .sales-chart .card-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .sales-chart .btn-group {
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+
+  .sales-chart .btn-group .btn {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+
+  .sales-chart .form-select {
+    padding: 4px 6px;
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+
+  .sales-chart .chart-container {
+    height: 250px;
+  }
+}
+
+/* Çok küçük ekranlar için */
+@media (max-width: 360px) {
+  .sales-chart .card {
+    padding: 6px;
+    margin-bottom: 6px;
+  }
+
+  .sales-chart .card-title {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+
+  .sales-chart .btn-group {
+    gap: 3px;
+    margin-bottom: 6px;
+  }
+
+  .sales-chart .btn-group .btn {
+    padding: 3px 6px;
+    font-size: 0.7rem;
+  }
+
+  .sales-chart .form-select {
+    padding: 3px 4px;
+    font-size: 0.7rem;
+    margin-bottom: 6px;
+  }
+
+  .sales-chart .chart-container {
+    height: 200px;
+  }
+}
+
+/* Landscape modda mobil için */
+@media (max-height: 500px) and (orientation: landscape) {
+  .sales-chart .card {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  .sales-chart .card-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .sales-chart .btn-group .btn {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+
+  .sales-chart .form-select {
+    padding: 4px 6px;
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+
+  .sales-chart .chart-container {
+    height: 200px;
+  }
+}

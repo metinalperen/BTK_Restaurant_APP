@@ -1,0 +1,265 @@
+/* PersonelEkleme bileşenine özel stiller */
+.personnel-container {
+  max-width: 1000px;
+  margin: 32px auto;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px var(--shadow);
+  padding: 32px;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.personnel-title {
+  margin: 0 0 16px 0;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Rol Filtresi */
+.role-filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+.role-filter button {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.role-filter button:hover {
+  background: var(--hover);
+  transform: translateY(-1px);
+}
+
+.role-filter button.active {
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+  border-color: transparent;
+  box-shadow: 0 2px 8px rgba(167, 139, 250, 0.3);
+}
+
+/* Yeni Personel Ekleme Formu */
+.add-personnel-form {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 6px var(--shadow);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+.add-personnel-title {
+  margin: 0 0 16px 0;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.personnel-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.personnel-form input,
+.personnel-form select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 14px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.personnel-form input::placeholder {
+  color: var(--text-muted);
+}
+
+.personnel-form input:focus,
+.personnel-form select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(167, 139, 250, 0.2);
+  background: var(--accent);
+}
+
+.personnel-form select option {
+  background: var(--background);
+  color: var(--text);
+}
+
+.add-personnel-btn {
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+  color: var(--text);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.add-personnel-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(167, 139, 250, 0.3);
+}
+
+.add-personnel-btn:active {
+  transform: translateY(0);
+}
+
+.add-personnel-btn:disabled {
+  background: var(--text-muted);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+.add-personnel-btn:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Personel Listesi */
+.personnel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.personnel-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.personnel-item:hover {
+  background: var(--hover);
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.personnel-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.personnel-name {
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.personnel-details {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.personnel-status {
+  font-weight: 600;
+  color: var(--text);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: auto;
+}
+
+.personnel-status.active {
+  background: linear-gradient(90deg, var(--success) 0%, #4caf50 100%);
+  box-shadow: 0 2px 8px rgba(74, 222, 128, 0.3);
+}
+
+.personnel-status.inactive {
+  background: linear-gradient(90deg, var(--text-muted) 0%, #495057 100%);
+  box-shadow: 0 2px 8px rgba(176, 176, 176, 0.3);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .personnel-container {
+    margin: 16px;
+    padding: 20px;
+  }
+  
+  .personnel-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .role-filter {
+    flex-wrap: wrap;
+  }
+  
+  .personnel-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .personnel-info {
+    text-align: center;
+  }
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.personnel-item {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Koyu tema için özel stiller */
+.dark-theme .personnel-container {
+  background: var(--card);
+  border-color: var(--border);
+}
+
+.dark-theme .add-personnel-form {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+.dark-theme .personnel-item {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+.dark-theme .personnel-item:hover {
+  background: var(--hover);
+}
