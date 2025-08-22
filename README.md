@@ -21,9 +21,7 @@
 - [🏗️ Mimari](#️-mimari)
 - [🔧 Teknolojiler](#-teknolojiler)
 - [⚙️ Kurulum](#️-kurulum)
-- [📊 API Dokümantasyonu](#-api-dokümantasyonu)
 - [👥 Geliştirici Ekibi](#-geliştirici-ekibi)
-- [📄 Lisans](#-lisans)
 
 ---
 
@@ -187,7 +185,7 @@ Bu proje, **BTK (Bilgi Teknolojileri ve İletişim Kurumu)** staj programı kaps
 
 #### 1. **Repository'yi Klonlayın**
 ```bash
-git clone https://github.com/your-username/BTK_Restaurant_APP.git
+git clone https://github.com/metinalperen/BTK_Restaurant_APP.git
 cd BTK_Restaurant_APP
 ```
 
@@ -216,17 +214,23 @@ flutter run
 ## 👥 Geliştirici Ekibi
 
 ### 🎯 **Proje Yöneticisi**
-- **Metin Alperen UÇAN** - Proje Yöneticisi
+- **Metin Alperen UÇAN**
+- **Ozan Ahmet DEDE**
 
 ### 💻 **Geliştiriciler**
-- **Ozan Ahmet DEDE** - Full Stack Developer
-- **Pelin DAĞ** - Full Stack Developer
-- **Muhammet Nashi AYDIN** - Full Stack Developer
-- **GÜL YASEMİN** - Full Stack Developer
-- **GÜL YETİK** - Full Stack Developer
-- **Kübra SOYSAL** - Full Stack Developer
-- **Rüveyda BAYRAM** - Full Stack Developer
-- **İbrahim ÇELİK** - Full Stack Developer
+
+- **Pelin DAĞ** 
+- **Muhammet Nashi AYDIN**
+- **GÜL YASEMİN**
+- **GÜL YETİK**
+- **Kübra SOYSAL**
+- **Rüveyda BAYRAM**
+- **İbrahim ÇELİK**
+- **Mehmet ÖZÇELİK**
+- **Zeynep Ruken BALCI**
+- **Sude ACAR** 
+- **Muhammet Salih HASILCIO**
+- **Umut SARAÇ**
 
 ---
 
