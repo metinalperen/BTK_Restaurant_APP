@@ -18,7 +18,78 @@
 		<license/>
 	</licenses>
 	<developers>
-		<developer/>
+		<developer>
+			<name>Metin Alperen UÇAN</name>
+			<role>Project Manager</role>
+		</developer>
+		<developer>
+			<name>Ozan Ahmet DEDE</name>
+			<role>Project Manager</role>
+		</developer>
+		<developer>
+			<name>Pelin DAĞ</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Muhammet Nasih AYDIN</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Gül YASEMİN</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Kübra SOYSAL</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Rüveyda BAYRAM</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Gül YETİK</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>İbrahim ÇELİK</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Mehmet ÖZÇELİK</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Zeynep Ruken BALCI</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Sude Melek ACAR</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Miyasenur TAŞKIN</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Muhammet Salih HASILCIO</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Umut SARAÇ</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Selin ÇALIŞKAN</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Betül KEMANECİ</name>
+			<role>Developer</role>
+		</developer>
+		<developer>
+			<name>Zeki Furkan YILDIZ</name>
+			<role>Developer</role>
+		</developer>
 	</developers>
 	<scm>
 		<connection/>

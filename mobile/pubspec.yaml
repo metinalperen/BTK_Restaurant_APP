@@ -1,7 +1,9 @@
 name: restaurant_app
-description: "A new Flutter project."
+description: "BTK Restaurant Management System - Mobile Application"
 publish_to: 'none'
 version: 1.0.0+1
+author: "BTK Development Team"
+homepage: "https://github.com/metinalperen/BTK_Restaurant_APP"
 
 environment:
   sdk: ^3.7.2

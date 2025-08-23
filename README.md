@@ -220,17 +220,21 @@ flutter run
 ### 💻 **Geliştiriciler**
 
 - **Pelin DAĞ** 
-- **Muhammet Nashi AYDIN**
-- **GÜL YASEMİN**
-- **GÜL YETİK**
+- **Muhammet Nasih AYDIN**
+- **Gül YASEMİN**
 - **Kübra SOYSAL**
 - **Rüveyda BAYRAM**
+- **Gül YETİK**
 - **İbrahim ÇELİK**
 - **Mehmet ÖZÇELİK**
 - **Zeynep Ruken BALCI**
-- **Sude ACAR** 
+- **Sude Melek ACAR** 
+- **Miyasenur TAŞKIN**
 - **Muhammet Salih HASILCIO**
 - **Umut SARAÇ**
+- **Selin ÇALIŞKAN**
+- **Betül KEMANECİ**
+- **Zeki Furkan YILDIZ**
 
 ---
 
