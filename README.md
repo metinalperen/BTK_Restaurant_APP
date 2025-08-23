@@ -220,7 +220,7 @@ flutter run
 ### 💻 **Geliştiriciler**
 
 - **Pelin DAĞ** 
-- **Muhammet Nasih AYDIN**
+- **Muhammed Nasih AYDIN**
 - **Gül YASEMİN**
 - **Kübra SOYSAL**
 - **Rüveyda BAYRAM**
